@@ -1,0 +1,26 @@
+package Chapter3if;
+
+import java.util.Scanner;
+
+public class TestResult {
+    public static void main(String args[]){
+    //get the test result
+        System.out.println("Enter your test score:");
+        Scanner Scanner = new Scanner(System.in);
+        double Score = Scanner.nextDouble();
+        //determine the letter grade
+        char Grade;
+        if (Score < 60) {
+            Grade ='F';
+        }else if (Score < 70) {
+            Grade ='D';
+        }else if (Score < 80) {
+            Grade ='C';
+        }else if (Score < 90) {
+            Grade = 'B';
+        }
+        else { Grade = 'A'; }
+
+        System.out.println("Your grade is "+ Grade);
+    }
+}
