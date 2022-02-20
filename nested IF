@@ -1,0 +1,30 @@
+package Chapter3if;
+
+import java.util.Scanner;
+
+public class LoanQualifier {
+    public static void main(String args[]) {
+        int requiredSalary = 30000;
+        int requiredYearsEmployed = 2;
+        //get what we don't
+        System.out.println("Enter your salary :");
+        Scanner Scanner = new Scanner(System.in);
+        double Salary = Scanner.nextDouble();
+        System.out.println("Enter your experience years :");
+        double years = Scanner.nextDouble();
+        Scanner.close();
+        //make a decision
+        if (Salary >= requiredSalary) {
+            if (years >= requiredYearsEmployed) {
+                System.out.println("congrats! you qualify for loan");
+            } else {
+                System.out.println("sorry you don't have " + requiredYearsEmployed + "years");
+            }
+
+        } else {
+            System.out.println("sorry you  must earn at least" + requiredSalary + "salary");
+        }
+
+
+    }
+}
