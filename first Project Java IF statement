@@ -1,0 +1,26 @@
+package Chapter3if;
+import java.util.Scanner;
+
+/*
+if statement
+All salespeople get a payment of $1000 a week.
+Salespeople who exceed 10 sales get an additional bonus of $250.
+ */
+public class SalaryCalculator {
+    public static void main(String args[] ){
+        //Initiate known values
+        int Salary =1000;
+        int Bonus=250;
+        //Get values from the unknown
+        System.out.println("how many sales did the employee make this week?");
+        Scanner Scanner = new Scanner(System.in);
+        int Sales = Scanner.nextInt();
+        Scanner.close();
+        //quick detour for the bonus earners(0=false ,1=true)
+        if (Sales >10){
+            Salary = Salary + Bonus ;
+        }
+        //output
+        System.out.println("The employee's pay $"+ Salary);
+    }
+}
