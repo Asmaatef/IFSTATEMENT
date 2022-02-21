@@ -1,0 +1,24 @@
+package Chapter4;
+
+import java.util.Scanner;
+
+public class AverageTestScore {
+    public static void main(String args[]){
+      int NumberOfStudents =24;
+      int NumberOfTests =4;
+        Scanner scanner = new Scanner(System.in);
+      for (int i=0; i<NumberOfStudents ;i++){
+          double total=0;
+          for (int j=0; j<NumberOfTests ;j++){
+              System.out.println("Enter the score of the test#"+(j+1));
+              double Score = scanner.nextDouble();
+              total = total + Score  ;
+
+          }
+          double average = total/NumberOfTests;
+          System.out.println("your average score is "+(i+1)+ average);
+      }
+      scanner.close();
+
+    }
+}
