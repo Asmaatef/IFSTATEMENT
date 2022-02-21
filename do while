@@ -1,0 +1,23 @@
+package Chapter4;
+
+import java.util.Scanner;
+
+public class AddNumber {
+    public static void main(String args[]){
+        Scanner Scanner =new Scanner(System.in);
+        boolean again ;
+        do {
+            System.out.println("Enter your first number");
+            double num1 = Scanner.nextDouble();
+            System.out.println("Enter your second number");
+            double num2 = Scanner.nextDouble();
+            double sum = num1+ num2 ;
+            System.out.println("your sum is" +sum);
+            System.out.println("would you like to start over");
+             again = Scanner.nextBoolean();
+
+        }while (again);
+        Scanner.close();
+
+
+    }
